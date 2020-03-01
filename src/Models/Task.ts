@@ -1,6 +1,7 @@
 export interface ITask {
     id: Number,
     Name: string,
+    Status: string,
     CreatedDate: Date,
     CompletedDate?: Date,
     DueDate?: Date,
@@ -11,6 +12,7 @@ const CreateTask = (name: string, createdDate: Date, desc: string) => {
     const newTask: ITask = {
         id: 32,
         Name: name,
+        Status: "new",
         CreatedDate: createdDate,
         Description: desc
     }
